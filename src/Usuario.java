@@ -58,15 +58,6 @@ public abstract class Usuario {
     }
 
     @Override
-    public String toString() {
-        return "Usuario{" +
-                "nombreCompleto='" + nombreCompleto + '\'' +
-                ", cedula='" + cedula + '\'' +
-                ", correoElectronico='" + correoElectronico + '\'' +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -75,7 +66,11 @@ public abstract class Usuario {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(cedula);
+    public String toString() {
+        return "Usuario{" +
+                "nombreCompleto='" + nombreCompleto + '\'' +
+                ", cedula='" + cedula + '\'' +
+                ", correoElectronico='" + correoElectronico + '\'' +
+                '}';
     }
 }
